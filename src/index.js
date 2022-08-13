@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
 import './index.css';
+import CustomCard from "./CustomCard";
+import Searchbar from "./Searchbar";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('reactroot'));
 
 root.render(
   <div>
-    <App/>
+    <Searchbar />
+    <CustomCard name="Cactus" />
+    <CustomCard name="Blume" />
   </div>
 );
