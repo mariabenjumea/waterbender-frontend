@@ -1,3 +1,4 @@
+import { toBeRequired } from "@testing-library/jest-dom/dist/matchers"
 import React from "react"
 import ChangeHumidity from "./ChangeHumidity"
 
@@ -5,6 +6,7 @@ const CustomCard = ({ name = "Pflanze" }) => {
     return (
 
         <div className="card">
+            <img src={"/images/plant1.png"} />
             {/* <img src={"./images/plant1.png"} alt="Avatar" style="width:100%"></img> */}
             <div class="container">
                 <h4>{name}</h4>

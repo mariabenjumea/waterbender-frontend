@@ -1,61 +1,54 @@
 body {
-  font-family: 'PixelGameFont';
-  background-color: aquamarine;
+  height: 100%;
+  font-family: 'PixelGameFont', 'Courier New';
+  background-image: linear-gradient(#6a0d83, #ce4993, #ee5d6c, #fb9062, #eeaf61);
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h4 {
+  text-align: center;
+  margin: 30px;
+  font-size: 18px;
+  text-transform: uppercase;
 }
 
 .card {
-  font-family: 'Courier New';
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  font-family: 'PixelGameFont', 'Courier New';
+    /* box-shadow: 8px 8px rgba(0,0,0,0.2); */
     transition: 0.3s;
     justify-content: center;
     width: 300px;
-    margin: 20px;
+    margin: 0px 20px;
     outline: 5px dashed #F5B66E;
   outline-offset: -10px;
   background-color:#FFE4B2 ;
   font-weight: 500;
-  }
-
-  h4 {
-    text-align: center;
-    margin: 40px;
-    font-size: 20px;
-    font-weight: 900;
-  }
-  
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  font-size: 18px;
+  box-shadow: 8px 8px rgba(42, 4, 4, 0.563);
   }
   
   .container {
+    margin: 0px 20px;
     padding: 10px 16px;
   }
-  .carousel {
-    margin-top: 100px;
-  }
 
-  form {
-    border: 3px solid #f1f1f1;
-  }
-  
-  input[type=text], input[type=password] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
+  .carousel {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
   }
   
   button {
-    font-family: 'Courier New';
+    font-family: 'PixelGameFont', 'Courier New';
     background-color: #F5B66E;
     color: white;
     padding: 14px 20px;
-    margin: 8px 0;
+    margin: 8px;
     border: none;
     cursor: pointer;
     width: 100px;
+    height: 40px;
   }
   
   button:hover {
@@ -68,4 +61,5 @@ body {
 
   .buttons {
     display: flex;
+    margin: 20px 0px;
   }

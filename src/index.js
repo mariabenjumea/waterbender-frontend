@@ -28,11 +28,11 @@ root.render(
     <div>
       {/* <Searchbar /> */}
       <div className='carousel'>
-        <Carousel slideSize="70%" height={300} slideGap="xl" loop withIndicators>
-          <CustomCard name="Cactus" />
-          <CustomCard name="Blume" />
-          <CustomCard name="Sukkulente" />
-        </Carousel>
+        {/* <Carousel slideSize="70%" height={300} slideGap="xl" loop withIndicators> */}
+        <CustomCard name="Cactus" />
+        <CustomCard name="Blume" />
+        <CustomCard name="Sukkulente" />
+        {/* </Carousel> */}
       </div>
     </div>
   </MantineProvider>

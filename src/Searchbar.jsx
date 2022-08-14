@@ -1,5 +1,4 @@
 import React from "react"
-import "./Searchbar.css"
 
 const SearchbarItem = ({ children }) => {
     return (
