@@ -1,12 +1,12 @@
 import React from "react"
 import "./Searchbar.css"
+import LoginPage from "./LoginPage"
+import AddPlant from "./AddPlant"
 
 const SearchbarItem = ({ children }) => {
     return (
         <div>
-            <button>
-                {children}
-            </button>
+            {children}
         </div>
     )
 }
@@ -15,11 +15,12 @@ const Searchbar = () => {
     return (
         <div className="Searchbar" style={{ display: "flex", justifyContent: "space-around" }}>
             <SearchbarItem>
-                Main Page
+                <AddPlant />
             </SearchbarItem>
             <SearchbarItem>
-                Add New Plant
+                <LoginPage />
             </SearchbarItem>
+
         </div>
     )
 }
