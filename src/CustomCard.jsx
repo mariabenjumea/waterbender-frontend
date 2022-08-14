@@ -1,15 +1,19 @@
 import React from "react"
-
-import './customcard.css';
+import ChangeHumidity from "./ChangeHumidity"
 
 const CustomCard = ({ name = "Pflanze" }) => {
     return (
 
         <div className="card">
+            {/* <img src={"./images/plant1.png"} alt="Avatar" style="width:100%"></img> */}
             <div class="container">
-                <h4><b>{name}</b></h4>
-                <p>Feuchtigkeit:</p>
-                <p>Minimum:</p>
+                <h4>{name}</h4>
+                <p>humidity:</p>
+                <p>minimum:</p>
+                <div class="buttons">
+                    <ChangeHumidity />
+                    <button type="button">Water</button>
+                </div>
             </div>
         </div>
 

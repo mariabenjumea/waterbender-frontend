@@ -26,12 +26,14 @@ const root = ReactDOM.createRoot(document.getElementById('reactroot'));
 root.render(
   <MantineProvider withGlobalStyles withNormalizeCSS>
     <div>
-      <Searchbar />
-      <Carousel slideSize="70%" height={200} slideGap="md" loop withIndicators>
-        <CustomCard name="Cactus" />
-        <CustomCard name="Blume" />
-        <CustomCard name="Sukkulente" />
-      </Carousel>
+      {/* <Searchbar /> */}
+      <div className='carousel'>
+        <Carousel slideSize="70%" height={300} slideGap="xl" loop withIndicators>
+          <CustomCard name="Cactus" />
+          <CustomCard name="Blume" />
+          <CustomCard name="Sukkulente" />
+        </Carousel>
+      </div>
     </div>
   </MantineProvider>
 );
