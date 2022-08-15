@@ -8,7 +8,6 @@ body {
 
 h4 {
   text-align: center;
-  margin: 30px;
   font-size: 18px;
   text-transform: uppercase;
 }
@@ -28,20 +27,11 @@ h4 {
   box-shadow: 8px 8px rgba(42, 4, 4, 0.563);
   }
 
-  .plantimg {
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: 0;
-    width: 60px;
-  }
+
   
   .container {
     margin: 0px 20px;
     padding: 10px 16px;
-  }
-
-  .mantine-Modal-root, .mantine-Modal-inner {
-    font-family: 'PixelGameFont', 'Courier New';
   }
 
   .carousel {
@@ -51,18 +41,18 @@ h4 {
   }
   
   button {
-    font-family: inherit;
-    background-color: #F5B66E;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px;
+    font-family: 'PixelGameFont' !important;
+    font-size: 16px !important;
+    background-color: #F5B66E !important;
+    color: white !important;
+    margin: 2px !important;
     border: none;
     cursor: pointer;
-    width: 100px;
-    height: 40px;
-    margin: 0px 10px;
+    width: 160px !important;
+    height: 60px !important;
     outline: 3px dashed #FFE4B2;
   outline-offset: -5px;
+  border-radius: 0 !important;
   }
   
   button:hover {
@@ -70,19 +60,34 @@ h4 {
   }
    
   .container {
-    padding: 16px;
+    padding: 5px;
   }
 
   .buttons {
     display: flex;
+    justify-content: center;
     margin: 20px 0px;
   }
 
   .logo {
-    margin-top: 20px;
+    display: block;
     margin-left: auto;
+    margin-top: 40px;
+    margin-right: 40px;
+    max-width: 70px;
+  }
+
+  .logocontainer {
+    justify-content: end;
+    margin-bottom: -100px;
+  }
+
+  .plantimg {
+    display: block;
+    margin-left: auto;
+    margin-top: 5px;
     margin-right: 0;
-    width: 100px;
+    width: 60px;
   }
 
   footer {
