@@ -36,25 +36,12 @@ const App = () => {
 
     return (
         <MantineProvider withGlobalStyles withNormalizeCSS>
-            {/* <Global styles={(theme) => ({
-
-                button: {
-
-                    fontFamily: "PixelGameFont"
-                }
-            })}> */}
             <div>
-                {/* <Searchbar /> */}
                 <div className="logocontainer">
                     <img src={Logo} className="logo" />
                 </div>
                 <div className='carousel'>
-                    {/* <Carousel slideSize="70%" height={300} slideGap="xl" loop withIndicators> */}
                     {plants.map(plant => <CustomCard name={plant.Name} humidity={plant.Humidity} minimum={plant.MinHumidity} />)}
-                    {/* <CustomCard name="Cactus" />
-                    <CustomCard name="Blume" />
-                    <CustomCard name="Sukkulente" /> */}
-                    {/* </Carousel> */}
                 </div>
                 <div>
                     <footer>
@@ -62,7 +49,6 @@ const App = () => {
                     </footer>
                 </div>
             </div>
-            {/* </Global> */}
         </MantineProvider >
     )
 }

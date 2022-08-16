@@ -8,8 +8,6 @@ const CustomCard = ({ name = "Pflanze", humidity = 0, minimum = 0 }) => {
     return (
 
         <div className="card">
-
-            {/* <img src={"./images/plant1.png"} alt="Avatar" style="width:100%"></img> */}
             <div class="container">
                 <img src={Image} className="plantimg" />
                 <h4>{name}</h4>
@@ -17,7 +15,6 @@ const CustomCard = ({ name = "Pflanze", humidity = 0, minimum = 0 }) => {
                 <p>minimum: {minimum}</p>
                 <div class="buttons">
                     <ChangeHumidity />
-                    {/* <button type="button">Water</button> */}
                 </div>
             </div>
         </div>

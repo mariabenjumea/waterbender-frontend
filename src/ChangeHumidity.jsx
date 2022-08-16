@@ -8,10 +8,9 @@ const ChangeHumidity = () => {
 
     function changeHumidity() {
         axios
-            .put(`${"http://localhost:6969/Plants"}/1`, {
+            .post(`${"http://localhost:6969/Plants"}/1`, {
                 MinHumidity: 0,
             })
-
     }
 
     function onSaveClick() {
@@ -28,8 +27,10 @@ const ChangeHumidity = () => {
                 title="Change Minimum Humidity"
             >
                 <label for="humidity"><b>Minimum Humidity</b></label>
+
                 <input type="number" placeholder="Enter Minimum Humidity" name="minhumidity" required />
-                <button onClick={onSaveClick}/*{changeHumidity}*/ >Save</button>
+
+                <button onClick={onSaveClick} >Save</button>
             </Modal>
 
             <Group position="center">
