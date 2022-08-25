@@ -24,6 +24,11 @@ const App = () => {
 
     useEffect(() => {
         // wird beim start/mount ausgeführt
+        refresh() // hier wird beim start einmal alles geladen
+    }, [])
+
+    // diese funktion lädt alle pflanzen (einmal beim init und einmal wenn wir was geändert haben)
+    const refresh = () => {
         axios({
             url: "http://localhost:6969/Plants",
             method: "GET",
@@ -32,8 +37,8 @@ const App = () => {
             console.log("alle plants", data)
             setPlants(data)
         })
-    }, [])
-
+    }
+    console.log("alle plants", plants)
     return (
         <MantineProvider withGlobalStyles withNormalizeCSS>
             <div>
@@ -41,7 +46,8 @@ const App = () => {
                     <img src={Logo} className="logo" />
                 </div>
                 <div className='carousel'>
-                    {plants.map(plant => <CustomCard name={plant.Name} humidity={plant.Humidity} minimum={plant.MinHumidity} />)}
+                    {/* hier besser "plant" das komplette objekt an CustomCard reingeben, nicht alles einzeln wie vorher */}
+                    {plants.map(plant => <CustomCard plant={plant} refresh={refresh} />)}
                 </div>
                 <div>
                     <footer>
